@@ -19,7 +19,7 @@ int main() {
             cout << "Word found at index: " << i << endl;
             found = true;
             break;
-        }
+        } 
     }
     if (!found) {
         cout << "Word not found";
