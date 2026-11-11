@@ -2,18 +2,20 @@
 using namespace std;
 
 int main() {
-
     string str = "he played chess.";
     string target = "chess";
     bool found = false;
-    for (int i = 0; i < str.length(); i++) {
-        int j;
-        for (j = 0; j < target.length(); j++) {
-            if (str[i + j] != target[j]) {
-                break;
-            }
+
+    int textLength = str.length();
+    int targetLength = target.length();
+
+    for (int i = 0; i <= textLength - targetLength; i++) {
+        int j = 0;
+        while (j < targetLength && str[i + j] == target[j]) {
+            j++;
         }
-        if (j == target.length()) {
+
+        if (j == targetLength) {
             cout << "Word found at index: " << i << endl;
             found = true;
             break;
