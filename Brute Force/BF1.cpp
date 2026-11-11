@@ -10,7 +10,7 @@ int main(){
         if(s == 'n'){
             b = true;
             break;
-        }
+        }s
         pos++;
     }
     if(b == true){
