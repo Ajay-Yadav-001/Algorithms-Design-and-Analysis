@@ -40,4 +40,3 @@ while ($true) {
     Start-Sleep -Seconds 5
 }
 #powershell -ExecutionPolicy Bypass -File .\auto_push.ps1
-powershell -ExecutionPolicy Bypass -File .\auto_push.ps1
